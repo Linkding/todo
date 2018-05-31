@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="./css/lib/normalize.css">
+<link rel="stylesheet" href="./css/common/global.css">
+<link rel="stylesheet" href="./css/main.css">
+<div class="row nav global">
+  <div class="container">
+    <div class="col-lg-4">
+      <h3>Biao Todo</h3>
+    </div>
+    <div class="col-lg-8">
+    </div>
+  </div>
+</div>
+<div class="row main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 sidebar">
+        <div class="sidebar-title">分组</div>
+        <hr>
+        <div id="cat-list" class="cat-list">
+          <!--<div class="cat-item">-->
+          <!--<input type="text" value="默认" disabled>-->
+          <!--</div>-->
+        </div>
+        <form id="cat-form" hidden>
+          <input type="hidden" name="id">
+          <input type="text" value="yo" class="block" name="title" autocomplete="off" placeholder="项目名称">
+          <button type="submit" class="add-btn">添加分组</button>
+          <button type="button" data-action="cancel">取消</button>
+        </form>
+
+        <div>
+          <button id="add-cat" class="block">+</button>
+        </div>
+      </div>
+      <div class="col-lg-8 main">
+        <form id="todo-form" class="row">
+          <input type="hidden" name="id">
+          <input type="hidden" name="cat_id">
+          <input id="todo-input" type="text" name="title" class="col" autocomplete="off">
+          <button class="add-btn">添加任务</button>
+          <select id="cat-select" name="cat_id" hidden class="row"></select>
+        </form>
+        <div id="todo-list">
+          <div class="incomplete"></div>
+          <hr>
+          <div class="completed"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./dist/bundle.js"></script>
+<!-- <script src="Utils/helper.js"></script>
+<script src="Utils/store.js"></script>
+<script src="Api/BaseApi.js"></script>
+<script src="Api/TaskApi.js"></script>
+<script src="Api/CatApi.js"></script>
+<script src="Ui/TaskUi.js"></script>
+<script src="Ui/CatUi.js"></script> -->
+
+<script src="index.js"></script>
